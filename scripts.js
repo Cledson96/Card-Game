@@ -101,6 +101,18 @@ function virar(ref) {
     }
 
   }
+  if (numero_cartas / 2 == concluido) {
+    alert(`Ganho mizeravi!
+           Jogadas feitas: ${jogadas} jogadas 
+           Tempo jogado: ${tempo} segundos`) ;
+    jogarnovamente = prompt("Quer jogar novamanete? Digite sim ou não!");
+    if (jogarnovamente == "sim" || jogarnovamente == "Sim") {
+      window.location.reload()
+
+
+    }
+  }
+
 }
 
   function erouuu() {
@@ -113,14 +125,4 @@ function virar(ref) {
 
   }
 
-  if (numero_cartas / 2 == concluido) {
-    alert(`Ganho mizeravi!
-           Jogadas feitas: ${jogadas} jogadas 
-           Tempo jogado: ${tempo} segundos`) ;
-    jogarnovamente = prompt("Quer jogar novamanete? Digite sim ou não!");
-    if (jogarnovamente == "sim" || jogarnovamente == "Sim") {
-      window.location.reload()
-
-
-    }
-  }
+  
