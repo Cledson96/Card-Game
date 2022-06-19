@@ -8,7 +8,7 @@ let jogadas = 0;
 let tempo = 0;
 let concluido = 0;
 let jogarnovamente = "";
-let ref ;
+let ref;
 const selecao = ["brasil.jpg", "alemanha.png", "argentina.png", "australia.png", "franca.jpg", "portugal.jpg", "senegal.png"];
 let mesa = [];
 let embaralha = [];
@@ -104,7 +104,7 @@ function virar(ref) {
   if (numero_cartas / 2 == concluido) {
     alert(`Ganho mizeravi!
            Jogadas feitas: ${jogadas} jogadas 
-           Tempo jogado: ${tempo} segundos`) ;
+           Tempo jogado: ${tempo} segundos`);
     jogarnovamente = prompt("Quer jogar novamanete? Digite sim ou não!");
     if (jogarnovamente == "sim" || jogarnovamente == "Sim") {
       window.location.reload()
@@ -114,15 +114,13 @@ function virar(ref) {
   }
 
 }
+function erouuu() {
+  cartalogo1.classList.add("escondido");
+  cartaLogo.classList.add("escondido");
+  cartacapa1.classList.remove("escondido");
+  cartaCapa.classList.remove("escondido");
+  mesa = [];
+  cartasViradas = 0;
 
-  function erouuu() {
-    cartalogo1.classList.add("escondido");
-    cartaLogo.classList.add("escondido");
-    cartacapa1.classList.remove("escondido");
-    cartaCapa.classList.remove("escondido");
-    mesa = [];
-    cartasViradas = 0;
+}
 
-  }
-
-  
