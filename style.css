@@ -3,10 +3,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #E5E5E5;
+    background-image: url("fundo.jpeg");
+    background-color: black;
+    max-width: 100%;
 }
 
-h1 {
+h1 {    
     margin-top: 40px;
     margin-bottom: 47px;
     font-family: 'Roboto';
@@ -15,7 +17,7 @@ h1 {
     font-size: 56px;
     line-height: 66px;
     letter-spacing: -0.004em;
-    color: #75B79E;
+    color:rgb(14, 14, 19);
 }
 
 .mesa {
@@ -24,15 +26,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    height: 500px;
+    width: 80%;
+    height: 100%;
     margin-left: 122px;
     margin-right: 116px;
-    background-color: blue;
+  
+    position: relative;
 }
 
 ul {
-   
+
     color: red;
     display: flex;
     align-items: center;
@@ -40,13 +43,16 @@ ul {
     flex-wrap: wrap;
     max-width: 100%;
     color: aqua;
-    
+    margin-right: 170px;
+    margin-left: 50px;
+    margin-top: 70px;
+
 }
 
 li {
-   
 
-    
+    margin-right: 51px;
+
 }
 
 img {
@@ -54,25 +60,95 @@ img {
     height: 100%;
     border: 1px solid #99CEA8;
     border-radius: 5px;
-  
+
 }
 
-.escondido{
-   display: none;
+.escondido {
+    display: none;
 }
-.cartinha{
+
+.cartinha {
     width: 117px;
     height: 146px;
     margin-bottom: 34px;
 }
+
 .carta_emblema {
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
 }
 
-.carta_capa{
+.carta_capa {
     width: 100%;
     height: 100%;
-    
- 
+    cursor: pointer;
+    transition: transform 5s;
+    transform: rotateY(180deg);
+}
+
+.escolhido {
+    border-style: groove;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: rgb(0, 255, 255);
+    box-sizing: border-box;
+}
+
+.confirmado {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: rgb(120, 226, 93);
+    box-sizing: border-box;
+
+}
+
+.jogadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50px;
+    border-style: groove;
+    border-color: dimgrey;
+    border-width: 2px;
+    background-color: grey;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 150px;
+    height: 50px;
+    color: yellowgreen;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tempo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50px;
+    border-style: groove;
+    border-color: dimgrey;
+    border-width: 2px;
+    background-color: chartreuse;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    width: 150px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.virada {
+    transform: rotateY(360deg);
+}
+
+div {
+    transition: all .5s;
 }
